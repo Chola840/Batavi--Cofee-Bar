@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-top: 5px solid #ff9500;
+}
+.logo {
+    max-width: 100px; 
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.order {
+    background-color: #ff9500;
+    color: white;
+}
+
+.contact {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: right;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.menu-image {
+    max-width: 0%; 
+    height: auto;
+    display: block;
+    margin: 9px auto;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        float: none;
+        margin-top: 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-bottom: 5px solid #ff9500;
+    width: 100%;
+}
