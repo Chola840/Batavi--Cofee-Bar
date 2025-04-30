@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVHK6QWKLS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JVHK6QWKLS');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .menu-image {
-            max-width: 250px; 
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Batavia Coffee Bar</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="brand">
-                <img src="Images/Logo.jpg" alt="Logo" class="logo">
-                Batavia Coffee Bar
-            </div>
-            <nav aria-label="Primary Navigation" role="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <section class="hero">
-                <div class="hero-text">
-                    <h2>Best Coffee</h2>
-                    <h1>Make your day great with our special coffee!</h1>
-                    <p>Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
-                    <nav><button class="order" onclick="location.href='#menu'">Order Now</button>
-                    <button class="contact" onclick="location.href='#contact'">Contact Us</button></nav>
-                </div>
-                <div class="hero-image">
-                    <img src="Images/breakfast.jpg" alt="Coffee Cup Splash">
-                </div>
-            </section>
-            
-            <section id="about">
-                <h2>About Us</h2>
-                <p>We serve the finest coffee, brewed to perfection with high-quality beans sourced globally.</p>
-                <img src="Images/About-Coffee.jpg" alt="About Coffee Shop">
-            </section>
-            
-            <section id="menu">
-                
-                <h2>Our Menu</h2>
-                <p>Enjoy a variety of coffee blends, from classic espresso to seasonal specialties.</p>
-                <img src="Images/Menu.jpg" alt="Cafe Menu" class="menu-image">
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2025 Coffee Website. All rights reserved.</p>
-        </footer>
-    </div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="Images/Logo.jpg" alt="Batavia Coffee Logo" class="logo" />
+        Batavia Coffee Bar
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+          <section class="hero" id="home">
+        <div class="hero-text">
+          <h2>Best Coffee</h2>
+          <h1>Make your day great with our special coffee!</h1>
+          <p>Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+          <button class="order">Order Now</button>
+          <button class="contact">Contact Us</button>
+        </div>
+        <div class="hero-image">
+          <img src="Images/breakfast.jpg" alt="Coffee Cup Splash" />
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We serve the finest coffee, brewed to perfection with high-quality beans sourced globally.
+            Our journey began years ago, and since then, we have been privileged to serve countless clients, each with unique needs and aspirations. 
+            Our success is a result of not only our expertise but also our genuine care for the success of those we work with.
+             We welcome you to explore the possibilities with us.
+        </p>
+        <img src="Images/About-Coffee.jpg" alt="About Coffee Shop" />
+      </section>
+
+      <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Enjoy a variety of coffee blends and bakery favorites.</p>
+        <img src="Images/Menu.jpg" alt="Menu" class="menu-image" />
+      </section>
+
+      <section id="testimonials"></section>
+
+      <section id="gallery"></section>
+    </main>
+
+    <footer id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-container">
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>📍 Address:</strong> 123 Brew Lane, Bean City, CA</p>
+          <p><strong>📞 Phone:</strong> (123) 456-7890</p>
+          <p><strong>✉️ Email:</strong> info@bataviacoffee.com</p>
+          <p><strong>🕒 Hours:</strong> Mon–Sun: 8 AM – 8 PM</p>
+        </div>
+      </div>
+
+      <div class="contact-submit">
+        <button type="submit" form="contact-form">Send Message</button>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Batavia Coffee Bar | All rights reserved.
+      </p>
+    </footer>
+  </div>
+
+  <script src="content.js" defer></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
